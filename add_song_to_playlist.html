@@ -1,0 +1,8 @@
+<form method="POST" action="{{ url_for('show_playlist', playlist_id=playlist.id) }}">
+    {{ form.csrf_token }}
+    <div class="form-group">
+        {{ form.song.label }}
+        {{ form.song }}
+    </div>
+    <button type="submit" class="btn btn-primary">Add Song</button>
+</form>

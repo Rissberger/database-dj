@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{ song.title }}</h1>
+
+<div class="song-details">
+    <p><strong>Artist:</strong> {{ song.artist }}</p>
+</div>
+
+<!-- You can also add a link to go back to the song list -->
+<a href="{{ url_for('show_all_songs') }}" class="btn btn-secondary">Back to Song List</a>
+
+{% endblock %}
